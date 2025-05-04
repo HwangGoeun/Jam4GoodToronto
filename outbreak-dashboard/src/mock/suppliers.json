@@ -1,0 +1,35 @@
+[
+  {
+    "BusinessPartner": "F001",
+    "CompanyName": "Valley Verde Farms",
+    "CityName": "Salinas",
+    "Region": "CA",
+    "Country": "US",
+    "PhoneNumber": "8315550101",
+    "MaterialSupplied": "Romaine Lettuce",
+    "FarmAuditScore": 92,
+    "LastShipmentDate": "2025-04-25"
+  },
+  {
+    "BusinessPartner": "F002",
+    "CompanyName": "Sunny Hills Growers",
+    "CityName": "Imperial Valley",
+    "Region": "CA",
+    "Country": "US",
+    "PhoneNumber": "7605550099",
+    "MaterialSupplied": "Romaine Lettuce",
+    "FarmAuditScore": 78,
+    "LastShipmentDate": "2025-04-22"
+  },
+  {
+    "BusinessPartner": "F003",
+    "CompanyName": "Highland Acres Farm",
+    "CityName": "Yuma",
+    "Region": "AZ",
+    "Country": "US",
+    "PhoneNumber": "9285550192",
+    "MaterialSupplied": "Romaine Lettuce",
+    "FarmAuditScore": 85,
+    "LastShipmentDate": "2025-04-27"
+  }
+] 

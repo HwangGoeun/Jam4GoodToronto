@@ -19,8 +19,12 @@ import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import ErrorIcon from '@mui/icons-material/Error';
 import WarningIcon from '@mui/icons-material/Warning';
 import InfoIcon from '@mui/icons-material/Info';
-import { notifications as initialNotifications, Notification } from '../../mock/data';
+import { Notification } from '../../types';
+import notificationsData from '../../mock/notifications.json';
 import { format } from 'date-fns';
+
+// Use type assertion for JSON import
+const initialNotifications = notificationsData as Notification[];
 
 const NotificationsPage: React.FC = () => {
   const [notifications, setNotifications] = useState<Notification[]>(initialNotifications);

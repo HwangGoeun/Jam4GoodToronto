@@ -1,7 +1,17 @@
 import React from 'react';
 import { Grid, Paper, Typography, Box, Card, CardContent, LinearProgress } from '@mui/material';
-import { outbreakEvents, labTests, consumerComplaints, notifications } from '../../mock/data';
+import { OutbreakEvent, LabTest, ConsumerComplaint, Notification } from '../../types';
+import outbreakEventsData from '../../mock/outbreakEvents.json';
+import labTestsData from '../../mock/labTests.json';
+import consumerComplaintsData from '../../mock/consumerComplaints.json';
+import notificationsData from '../../mock/notifications.json';
 import { format } from 'date-fns';
+
+// Use type assertions for JSON imports
+const outbreakEvents = outbreakEventsData as OutbreakEvent[];
+const labTests = labTestsData as LabTest[];
+const consumerComplaints = consumerComplaintsData as ConsumerComplaint[];
+const notifications = notificationsData as Notification[];
 
 const IncidentCommandCenter: React.FC = () => {
   // Calculate key metrics from mock data

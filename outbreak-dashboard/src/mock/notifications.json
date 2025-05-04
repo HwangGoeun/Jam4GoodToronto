@@ -1,0 +1,18 @@
+[
+  {
+    "id": "N001",
+    "timestamp": "2025-04-30T08:00:00Z",
+    "type": "alert",
+    "message": "E. coli detected in batch GFRM0520-QC",
+    "priority": "high",
+    "read": false
+  },
+  {
+    "id": "N002",
+    "timestamp": "2025-04-30T08:15:00Z",
+    "type": "warning",
+    "message": "Recall process initiated",
+    "priority": "high",
+    "read": false
+  }
+] 

@@ -1,0 +1,32 @@
+[
+  {
+    "Customer": "D101",
+    "CustomerName": "FreshDirect Logistics",
+    "Region": "Ontario",
+    "Country": "CA",
+    "EmailAddress": "alan.reid@freshdirect.ca",
+    "ProductReceived": "GreenFresh Romaine Lettuce",
+    "DeliveryFrequency": "Weekly",
+    "LastDeliveryDate": "2025-04-28"
+  },
+  {
+    "Customer": "D102",
+    "CustomerName": "GroceryFlow",
+    "Region": "Quebec",
+    "Country": "CA",
+    "EmailAddress": "chloe.t@groceryflow.ca",
+    "ProductReceived": "GreenFresh Romaine Lettuce",
+    "DeliveryFrequency": "Twice Weekly",
+    "LastDeliveryDate": "2025-04-26"
+  },
+  {
+    "Customer": "D103",
+    "CustomerName": "MapleLeaf Distributors",
+    "Region": "Manitoba",
+    "Country": "CA",
+    "EmailAddress": "imran.k@mapleleafd.ca",
+    "ProductReceived": "GreenFresh Romaine Lettuce",
+    "DeliveryFrequency": "Weekly",
+    "LastDeliveryDate": "2025-04-29"
+  }
+] 

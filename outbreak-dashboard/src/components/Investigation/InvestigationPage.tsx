@@ -12,8 +12,13 @@ import {
   Chip,
   Grid,
 } from '@mui/material';
-import { labTests, consumerComplaints } from '../../mock/data';
+import { LabTest, ConsumerComplaint } from '../../types';
+import labTestsData from '../../mock/labTests.json';
+import consumerComplaintsData from '../../mock/consumerComplaints.json';
 import { format } from 'date-fns';
+
+const labTests = labTestsData as LabTest[];
+const consumerComplaints = consumerComplaintsData as ConsumerComplaint[];
 
 const InvestigationPage: React.FC = () => {
   const getLabStatusChip = (status: string) => {
