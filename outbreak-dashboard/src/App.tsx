@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
@@ -10,19 +10,11 @@ import Typography from '@mui/material/Typography';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton'; // Use ListItemButton for better semantics
+import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import TimelineIcon from '@mui/icons-material/Timeline';
-import ScienceIcon from '@mui/icons-material/Science';
-import PeopleIcon from '@mui/icons-material/People';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import IncidentCommandCenter from './components/IncidentCommand/IncidentCommandCenter';
-import ProductTrackingPage from './components/ProductTracking/ProductTrackingPage';
-import InvestigationPage from './components/Investigation/InvestigationPage';
-import ResourcesPage from './components/ResourceManagement/ResourcesPage';
-import NotificationsPage from './components/Notifications/NotificationsPage';
+import BatchListSidebar from './components/BatchListSidebar/BatchListSidebar';
+import ProductJourneyMap from './components/ProductJourneyMap/ProductJourneyMap';
 
 // Define the theme (can be customized later)
 const theme = createTheme({
@@ -37,18 +29,12 @@ const theme = createTheme({
   },
 });
 
-const drawerWidth = 240;
-
-// Define the navigation items
-const navItems = [
-  { text: 'Incident Command', icon: <DashboardIcon />, path: '/' },
-  { text: 'Product Tracking', icon: <TimelineIcon />, path: '/products' },
-  { text: 'Investigation', icon: <ScienceIcon />, path: '/investigation' },
-  { text: 'Resources', icon: <PeopleIcon />, path: '/resources' },
-  { text: 'Notifications', icon: <NotificationsIcon />, path: '/notifications' },
-];
+const drawerWidth = 280;
 
 function App() {
+  // Example: Define a default batch ID to redirect to
+  const defaultBatchId = 'GFRM0520-QC'; // Or fetch the first/most relevant one
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -73,30 +59,19 @@ function App() {
             }}
           >
             <Toolbar /> {/* Offset for AppBar */}
-            <Box sx={{ overflow: 'auto' }}>
-              <List>
-                {navItems.map((item) => (
-                  <ListItem key={item.text} disablePadding>
-                    <ListItemButton component={Link} to={item.path}>
-                      <ListItemIcon>{item.icon}</ListItemIcon>
-                      <ListItemText primary={item.text} />
-                    </ListItemButton>
-                  </ListItem>
-                ))}
-              </List>
-            </Box>
+            <BatchListSidebar />
           </Drawer>
 
           {/* Main Content Area */}
           <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
             <Toolbar /> {/* Offset for AppBar */}
-            <Container maxWidth="lg">
+            <Container maxWidth={false} disableGutters>
               <Routes>
-                <Route path="/" element={<IncidentCommandCenter />} />
-                <Route path="/products" element={<ProductTrackingPage />} />
-                <Route path="/investigation" element={<InvestigationPage />} />
-                <Route path="/resources" element={<ResourcesPage />} />
-                <Route path="/notifications" element={<NotificationsPage />} />
+                {/* Route for specific batch details */}
+                <Route path="/batch/:batchId" element={<ProductJourneyMap />} />
+                {/* Default route: Redirect to a specific batch or show a welcome page */}
+                <Route path="/" element={<Navigate to={`/batch/${defaultBatchId}`} replace />} />
+                {/* Optional: Add a 404 or catch-all route */}
               </Routes>
             </Container>
           </Box>
