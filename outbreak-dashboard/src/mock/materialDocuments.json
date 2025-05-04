@@ -1,0 +1,32 @@
+[
+  {
+    "MaterialDocument": "5000000001",
+    "Batch": "GFRM0520-QC",
+    "Material": "600G-ROM-3H",
+    "Supplier": "F001",
+    "Customer": "D102",
+    "Quantity": 450,
+    "DocumentDate": "2025-04-20",
+    "ShipmentStatus": "Delivered"
+  },
+  {
+    "MaterialDocument": "5000000002",
+    "Batch": "GFRM0519-ON",
+    "Material": "600G-ROM-3H",
+    "Supplier": "F002",
+    "Customer": "D101",
+    "Quantity": 500,
+    "DocumentDate": "2025-04-19",
+    "ShipmentStatus": "Delivered"
+  },
+  {
+    "MaterialDocument": "5000000003",
+    "Batch": "GFRM0519-ON",
+    "Material": "600G-ROM-3H",
+    "Supplier": "F003",
+    "Customer": "D103",
+    "Quantity": 300,
+    "DocumentDate": "2025-04-18",
+    "ShipmentStatus": "Delivered"
+  }
+] 

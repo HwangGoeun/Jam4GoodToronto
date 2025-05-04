@@ -1,0 +1,19 @@
+[
+  {
+    "id": "LT001",
+    "batchId": "GFRM0520-QC",
+    "testDate": "2025-04-30T07:00:00Z",
+    "testType": "E. coli O157:H7",
+    "result": "Positive",
+    "status": "positive",
+    "notes": "Initial screening positive"
+  },
+  {
+    "id": "LT002",
+    "batchId": "GFRM0519-ON",
+    "testDate": "2025-04-30T08:00:00Z",
+    "testType": "E. coli O157:H7",
+    "result": "Negative",
+    "status": "negative"
+  }
+] 

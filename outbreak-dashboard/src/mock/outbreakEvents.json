@@ -1,0 +1,25 @@
+[
+  {
+    "id": "1",
+    "timestamp": "2025-04-30T08:00:00Z",
+    "type": "detection",
+    "description": "Initial E. coli detection in batch GFRM0520-QC",
+    "status": "completed",
+    "assignedTo": "John Smith"
+  },
+  {
+    "id": "2",
+    "timestamp": "2025-04-30T08:30:00Z",
+    "type": "notification",
+    "description": "CFIA notification sent",
+    "status": "completed"
+  },
+  {
+    "id": "3",
+    "timestamp": "2025-04-30T09:00:00Z",
+    "type": "recall",
+    "description": "Recall initiated for affected batches",
+    "status": "in-progress",
+    "assignedTo": "Sarah Johnson"
+  }
+] 

@@ -12,7 +12,14 @@ import {
   Chip,
 } from '@mui/material';
 import ForceGraph2D from 'react-force-graph-2d';
-import { suppliers, customers, materialDocuments } from '../../mock/data';
+import { Supplier, Customer, MaterialDocument } from '../../types';
+import suppliersData from '../../mock/suppliers.json';
+import customersData from '../../mock/customers.json';
+import materialDocumentsData from '../../mock/materialDocuments.json';
+
+const suppliers: Supplier[] = suppliersData;
+const customers: Customer[] = customersData;
+const materialDocuments: MaterialDocument[] = materialDocumentsData;
 
 const ProductTrackingPage: React.FC = () => {
   // Prepare data for the force graph

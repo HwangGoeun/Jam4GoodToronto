@@ -1,0 +1,22 @@
+[
+  {
+    "id": "CC001",
+    "date": "2025-04-29T15:30:00Z",
+    "customerName": "Jane Doe",
+    "productCode": "600G-ROM-3H",
+    "batchId": "GFRM0520-QC",
+    "symptoms": ["nausea", "abdominal pain"],
+    "severity": "medium",
+    "status": "investigating"
+  },
+  {
+    "id": "CC002",
+    "date": "2025-04-29T16:45:00Z",
+    "customerName": "John Smith",
+    "productCode": "600G-ROM-3H",
+    "batchId": "GFRM0520-QC",
+    "symptoms": ["diarrhea", "fever"],
+    "severity": "high",
+    "status": "new"
+  }
+] 
